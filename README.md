@@ -20,15 +20,19 @@ The command includes several paraemeters and they are as follows
 1. **--cluster-name**: Name of the cluster that the notebook is to be attached to.
     * required: Yes
     * Default: None
+    * Case sensitive: Yes
 2. **--source-folder**: Path to the folder containing the databricks notebooks, either relative or absolute.
     * required: Yes
     * Default: None
+    * Case sensitive: Yes
 3. **--destination-folder**:  Absolute path of the folder in the databricks workspace where the notebooks are to be placed
     * required: Yes
     * Default: None
+    * Case sensitive: Yes
 4. **--profile**:  databricks-cli profile to use when connecting. This will also define which workspace is being used
     * required: No
     * Default profile: DEFAULT 
+    * Case sensitive: Yes
 5. **-p**:  Same as --profile
 
 ## Setting up databricks-cli profile
