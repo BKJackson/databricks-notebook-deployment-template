@@ -12,6 +12,8 @@ databricks-cli has to be installed usint ``pip install databricks-cli``
 No installation is necessary beyond having python and the databricks cli in your path variable
 
 ## Usage
+
+### Commands
 Once the requirements have been met you can use the script to upload folders of notebooks to a databricks workspace. The command to run this script is fairly simple and is as follows
 
 ``python <path-to-databricks_search.py> --cluster-name <name of cluster> --source-folder <path-to-source-folder> --destination-folder <absolute-path-of-destination-folder> -p <databricks-cli profile>``
@@ -34,6 +36,9 @@ The command includes several paraemeters and they are as follows
     * Default profile: DEFAULT 
     * Case sensitive: Yes
 5. **-p**:  Same as --profile
+
+### requirements.txt support
+If you have a requirements.txt file in the directory from which you run the script, i.e. the present working directory, the script will preform a passive check of modules on the cluster that is named in the command and warn you of any inconsistencies.
 
 ## Setting up databricks-cli profile
 Setting up the databricks cli profile can be done fairly easily by utilizing one of the following commands and following the prompts:
